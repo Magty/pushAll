@@ -6,7 +6,7 @@ on:
   # 监听push操作
   push:
     branches:
-      - main # 这里只配置了main分支，所以只有推送main分支才会触发以下任务
+      - master # 这里只配置了master分支，所以只有推送master分支才会触发以下任务
   pull_request:
 
   # 这个选项可以使你手动在 Action tab 页面触发工作流
@@ -56,7 +56,7 @@ jobs:
 
       # 部署 https://github.com/JamesIves/github-pages-deploy-action
       - name: Deploy 🚀
-        uses: Magty/pushAll
+        uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
