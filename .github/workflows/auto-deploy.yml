@@ -33,12 +33,12 @@ jobs:
     steps:
       # 官方action，将代码拉取到虚拟机
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # 建一个名为setup-node的步骤（安装指定版本的Node.js）
       - name: setup-node
         # 使用setup-node@v3这个action
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         # 指定某个action 可能需要输入的参数
         with:
           node-version: '20.x'
@@ -56,7 +56,7 @@ jobs:
 
       # 部署 https://github.com/JamesIves/github-pages-deploy-action
       - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
