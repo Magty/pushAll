@@ -42,7 +42,7 @@ jobs:
         uses: actions/setup-node@v4
         # 指定某个action 可能需要输入的参数
         with:
-          node-version: 'lts'
+          node-version: 'latest'
 
       # 安装 pnpm
       - name: Install pnpm
