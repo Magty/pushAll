@@ -33,7 +33,7 @@ jobs:
     # 步骤
     steps:
       # 官方action，将代码拉取到虚拟机
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v4
 
       # 建一个名为setup-node的步骤（安装指定版本的Node.js）
@@ -49,7 +49,7 @@ jobs:
         run: npm install pnpm -g
 
       # 安装依赖
-      - name: Install dependencies
+      - name: Install dependencies 🏭
         run: pnpm i
       # 打包
       - name: Build application 🔧
