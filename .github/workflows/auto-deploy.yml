@@ -57,7 +57,7 @@ jobs:
 
       # 部署 https://github.com/JamesIves/github-pages-deploy-action
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.6.0
         if: github.ref == 'refs/heads/main'
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
