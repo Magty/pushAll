@@ -25,6 +25,7 @@ jobs:
     # 运行环境
     # runs-on: macos-latest
     # runs-on: windows-latest
+    name: build-and-deploy
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -37,11 +38,11 @@ jobs:
 
       # 建一个名为setup-node的步骤（安装指定版本的Node.js）
       - name: setup-node
-        # 使用setup-node@v3这个action
+        # 使用setup-node@v4这个action
         uses: actions/setup-node@v4
         # 指定某个action 可能需要输入的参数
         with:
-          node-version: '20.x'
+          node-version: 'lts'
 
       # 安装 pnpm
       - name: Install pnpm
@@ -52,11 +53,11 @@ jobs:
         run: pnpm i
       # 打包
       - name: Build application 🔧
-        run: pnpm run build:prod
+        run: pnpm run build
 
       # 部署 https://github.com/JamesIves/github-pages-deploy-action
       - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v4
+        uses: JamesIves/github-pages-deploy-action@4
         if: github.ref == 'refs/heads/main'
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
