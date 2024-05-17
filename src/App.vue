@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import useCheckUpdate from './hooks/useVersion';
+
 const version = import.meta.env.VITE_APP_VERSION;
+useCheckUpdate();
 </script>
 
 <template>
