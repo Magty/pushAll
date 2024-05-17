@@ -14,7 +14,11 @@ const useCheckUpdate = () => {
       } else if (newVersion !== oldVersion) {
         uploadNotificationShow = true;
         // 本地已有版本信息，但是和新版不同：版本更新，弹出提示
-        if (window.confirm('检测到系统当前版本已更新，请刷新浏览器后使用。')) {
+        if (
+          window.confirm(
+            '检测到系统当前版本已更新，请刷新浏览器后使用去玩儿无群二。'
+          )
+        ) {
           uploadNotificationShow = false;
           // 更新localStorage版本号信息
           window.localStorage.setItem('vs', newVersion);
