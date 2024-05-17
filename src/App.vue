@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const version = import.meta.env.VITE_APP_VERSION;
+</script>
 
 <template>
   <div>
@@ -9,7 +11,7 @@
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <div>版本号：{{ import.meta.env.VITE_APP_VERSION }}</div>
+  <div>版本号：{{ version }}</div>
 </template>
 
 <style scoped>
