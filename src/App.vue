@@ -10,7 +10,7 @@ document.body.addEventListener('plugin_web_update_notice', (e: any) => {
   console.log('🚀 ~ document.body.addEventListener ~ version:', version);
 
   // write some code, show your custom notification and etc.
-  alert('System update!');
+  // alert('System update!');
 });
 </script>
 
