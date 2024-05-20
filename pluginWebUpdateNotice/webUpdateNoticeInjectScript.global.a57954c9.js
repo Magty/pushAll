@@ -14,7 +14,7 @@
       </div>
     </div>`}s.innerHTML=m,document.querySelector(`.${I}`).appendChild(s),j()}catch(e){console.error("[pluginWebUpdateNotice] Failed to show notification",e)}}})();
 
-  window.__checkUpdateSetup__({"versionType":"build_timestamp","notificationProps":{"title":"📢 系统更新","description":"为了您更好的体验我们升级了系统，请您刷新页面体验最新版本,如需自己刷新,请使用shift加f5进行刷新","buttonText":"刷新","dismissButtonText":"忽略"},"injectFileBase":"./"});
+  window.__checkUpdateSetup__({"versionType":"build_timestamp","notificationProps":{"title":"📢 系统更新1","description":"为了您更好的体验我们升级了系统，请您刷新页面体验最新版本,如需自己刷新,请使用shift加f5进行刷新","buttonText":"刷新","dismissButtonText":"忽略"},"injectFileBase":"./"});
       ;const logFn = function bt(t,c){console.log(`version: %c${t}`,"color: #1677ff"),console.log(`release time: %c${new Date(c).toLocaleString()}`,"color: #1677ff")}
-      ;logFn('1716192107840', 1716192107862)
+      ;logFn('1716192250614', 1716192250637)
     
