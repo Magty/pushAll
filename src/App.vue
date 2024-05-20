@@ -23,7 +23,7 @@ document.body.addEventListener('plugin_web_update_notice', (e: any) => {
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <div>版本号：{{ version }}</div>
+  <div>[版本号]：{{ version }}</div>
   <h1><router-link to="/home">Home</router-link></h1>
   <h1><router-link to="/about">About</router-link></h1>
   <RouterView />
