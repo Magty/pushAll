@@ -15,6 +15,9 @@ useCheckUpdate();
     </a>
   </div>
   <div>版本号：{{ version }}</div>
+  <h1><router-link to="/home">Home</router-link></h1>
+  <h1><router-link to="/about">About</router-link></h1>
+  <RouterView />
 </template>
 
 <style scoped>
