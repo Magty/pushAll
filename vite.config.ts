@@ -18,7 +18,7 @@ export default defineConfig({
     webUpdateNotice({
       versionType: 'build_timestamp',
       notificationProps: {
-        title: '📢 系统更新',
+        title: '📢 系统更新1',
         description:
           '为了您更好的体验我们升级了系统，请您刷新页面体验最新版本,如需自己刷新,请使用shift加f5进行刷新',
         buttonText: '刷新',
