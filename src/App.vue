@@ -1,8 +1,17 @@
 <script setup lang="ts">
-import useCheckUpdate from './hooks/useVersion';
+//import useCheckUpdate from './hooks/useVersion';
 
 const version = import.meta.env.VITE_APP_VERSION;
-useCheckUpdate();
+// useCheckUpdate();
+
+document.body.addEventListener('plugin_web_update_notice', (e: any) => {
+  const { version, options } = e.detail;
+  console.log('🚀 ~ document.body.addEventListener ~ options:', options);
+  console.log('🚀 ~ document.body.addEventListener ~ version:', version);
+
+  // write some code, show your custom notification and etc.
+  alert('System update!');
+});
 </script>
 
 <template>

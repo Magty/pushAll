@@ -17,6 +17,7 @@
   "devDependencies": {
     "@arco-design/web-vue": "^2.55.2",
     "@arco-plugins/vite-vue": "^1.4.5",
+    "@plugin-web-update-notification/vite": "^1.7.1",
     "@types/node": "^20.12.12",
     "@vitejs/plugin-vue": "^5.0.4",
     "ts-node": "^10.9.2",
