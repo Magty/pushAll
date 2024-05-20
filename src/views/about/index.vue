@@ -1,5 +1,5 @@
 <template>
-  <div>关于222页</div>
+  <div>关于3333页</div>
 </template>
 
 <script setup lang="ts"></script>
